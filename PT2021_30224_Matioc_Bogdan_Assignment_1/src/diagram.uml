@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="591.0" y="541.0">Exceptions.DivideByZeroPolynomialException</node>
+    <node x="421.5" y="0.0">Model.Monomial.Monomial</node>
+    <node x="0.0" y="541.0">Model.Polynomial.Polynomial</node>
+    <node x="0.0" y="774.0">Exceptions.InvalidDataInputException</node>
+    <node x="253.0" y="541.0">Model.ParsingDataModel</node>
+    <node x="296.0" y="216.0">Model.Monomial.DoubleMonomial</node>
+    <node x="527.0" y="216.0">Model.Monomial.IntegerMonomial</node>
+    <node x="0.0" y="0.0">Controller.Controller</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Model.Monomial.DoubleMonomial" target="Model.Monomial.Monomial">
+      <point x="0.0" y="-38.5" />
+      <point x="401.5" y="191.0" />
+      <point x="469.0" y="191.0" />
+      <point x="-47.5" y="83.0" />
+    </edge>
+    <edge source="Model.Monomial.IntegerMonomial" target="Model.Monomial.Monomial">
+      <point x="0.0" y="-38.5" />
+      <point x="631.5" y="191.0" />
+      <point x="564.0" y="191.0" />
+      <point x="47.5" y="83.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5775862068965517" x="1220.1791044776119" y="346.17910447761193" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

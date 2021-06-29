@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="94.0" layoutY="62.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="412.0" style="-fx-background-radius: 50; -fx-background-color: #ffffff67;" AnchorPane.bottomAnchor="62.80000000000001" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="62.0">
+         <children>
+            <Label layoutX="22.0" layoutY="138.0" text="P(x):">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pTextField" layoutX="55.0" layoutY="136.0" prefHeight="25.0" prefWidth="178.0" />
+            <Label layoutX="22.0" layoutY="183.0" text="Q(x):">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="qTextField" layoutX="55.0" layoutY="179.0" prefHeight="25.0" prefWidth="178.0" />
+            <Button layoutX="250.0" layoutY="20.0" mnemonicParsing="false" onAction="#addButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 80;" text="P + Q">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="332.0" layoutY="45.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#decreaseButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 80;" text="P - Q">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="250.0" layoutY="80.0" mnemonicParsing="false" onAction="#multiplyButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 80;" text="P * Q">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="332.0" layoutY="105.0" mnemonicParsing="false" onAction="#divideButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 80;" text="P / Q">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="250.0" layoutY="140.0" mnemonicParsing="false" onAction="#deriveButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 80;" text="P'">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="332.0" layoutY="173.0" mnemonicParsing="false" onAction="#integrateButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 80;" text="P">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="23.0" layoutY="226.0" text="RESULT">
+               <font>
+                  <Font name="Bodoni MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="resultTextField" alignment="TOP_RIGHT" editable="false" layoutX="74.0" layoutY="222.0" prefHeight="25.0" prefWidth="156.0" />
+            <Button layoutX="250.0" layoutY="202.0" mnemonicParsing="false" onAction="#resetButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 80;" text="RESET">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="image1" fitHeight="123.0" fitWidth="216.0" layoutX="68.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calculator.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="352.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@integral-mathematical-sign.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.8342105150222778" green="0.8342105150222778" blue="0.8342105150222778" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
